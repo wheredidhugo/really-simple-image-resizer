@@ -1,0 +1,23 @@
+.title {
+  background-color: #3e3d3d;
+  color: white;
+  font-family: "Gill Sans", sans-serif;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#button {
+  height: 20px;
+  width: 100px;
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
