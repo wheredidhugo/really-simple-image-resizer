@@ -8,6 +8,24 @@ window.addEventListener("DOMContentLoaded", () => {
     var dir;
     var dirOutput;
 
+    function resize(file) {
+      sharp(dir + file)
+        .metadata()
+        .then(function (metadata) {
+          var width = metadata.width;
+          var height = metadata.height;
+          if (width > height) {
+            sharp(dir + file)
+              .resize(vWidth, vHeight)
+              .toFile(dirOutput + file);
+          } else {
+            sharp(dir + file)
+              .resize(vHeight, vWidth)
+              .toFile(dirOutput + file);
+          };
+        });
+    };
+
     var vWidth = parseInt(document.getElementById("vWidth").value);
     var vHeight = parseInt(document.getElementById("vHeight").value);
 
@@ -15,31 +33,17 @@ window.addEventListener("DOMContentLoaded", () => {
       dir = path.join(__dirname + "../../../../../pics/");
       dirOutput = path.join(__dirname + "../../../../../output/");
     } else if (process.platform === "win32") {
-      dir;
-      dirOutput;
-    }
+      dir = path.join(__dirname + "/pics/");
+      dirOutput = path.join(__dirname + "/output/");
+    };
 
     fs.readdir(dir, (err, files) => {
       if (err) {
         throw err;
-      }
+      };
 
       files.forEach((file) => {
-        sharp(dir + file)
-          .metadata()
-          .then(function (metadata) {
-            var width = metadata.width;
-            var height = metadata.height;
-            if (width > height) {
-              sharp(dir + file)
-                .resize(vWidth, vHeight)
-                .toFile(dirOutput + file);
-            } else {
-              sharp(dir + file)
-                .resize(vHeight, vWidth)
-                .toFile(dirOutput + file);
-            }
-          });
+        resize(file);
       });
     });
   };
