@@ -2,6 +2,7 @@ const fs = require("fs");
 const sharp = require("sharp");
 const resize = require("sharp/lib/resize");
 const path = require("path");
+const homedir = require("os").homedir();
 
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("button").onclick = function () {
@@ -35,6 +36,9 @@ window.addEventListener("DOMContentLoaded", () => {
     } else if (process.platform === "win32") {
       dir = path.join(__dirname + "/pics/");
       dirOutput = path.join(__dirname + "/output/");
+      // If you want to get your folders that are on the desktop then uncomment the next two lines and comment the last two lines
+      // dir = path.join(homedir + "/Desktop/pics");
+      // dirOutput = path.join(homedir + "/Desktop/output");
     };
 
     fs.readdir(dir, (err, files) => {
