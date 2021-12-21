@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/icon.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . really-simple-image-resizer --overwrite --platform=win32 --arch=ia32 --icon=src/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Really Simple Image Resizer\"",
+    "package-win": "npx electron-packager . --overwrite --icon=src/icon.ico",
     "package-linux": "electron-packager . really-simple-image-resizer --overwrite --platform=linux --arch=x64 --icon=src/icon.png --prune=true --out=release-builds"
   },
   "author": "bgpvp",
