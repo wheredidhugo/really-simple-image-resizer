@@ -26,16 +26,16 @@ Clone this repository by using a command line:
 
 ## Step 2: Install all the dependencies
 
-```js
-npm install
+```bash
+> npm install
 ```
 
 ## Step 3: Make sure your application works
 
 Put a test pic in the pics folder and launch the app by typing:
 
-```js
-npm start
+```bash
+> npm start
 ```
 
 Enter two values then click on Resize.
@@ -46,8 +46,8 @@ You can now check the output folder and see your resized image.
 
 You can turn all your code into an executable file (.exe) by typing:
 
-```js
-npm run package-win
+```bash
+> npm run package-win
 ```
 
 ### It is recommended to be on Windows whilst running this command.
