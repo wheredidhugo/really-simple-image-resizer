@@ -11,6 +11,7 @@ function createWindow() {
       nodeIntegration: true,
       preload: pldPath,
     },
+    autoHideMenuBar: true,
   });
   mainWindow.loadFile("index.html");
 }
