@@ -12,15 +12,7 @@
 
 ## Step 1: Clone this repo
 
-Either download the zip by clicking on the green button that says "Code" and then clicking on "Download ZIP" (or even [this link](https://github.com/bgpvp/really-simple-image-resizer/archive/refs/heads/main.zip))
-
-or
-
-Clone this repository by using a command line:
-
-```bash
-> git clone https://github.com/bgpvp/really-simple-image-resizer/
-```
+Clone this repository
 
 #### You can remove the icon.png in the pics and output folders since they are used as placeholders.
 
@@ -62,15 +54,7 @@ You can turn all your code into an executable file (.exe) by typing:
 
 ## Step 1: Clone this repo
 
-Either download the zip by clicking on the green button that says "Code" and then clicking on "Download ZIP" (or even [this link](https://github.com/bgpvp/really-simple-image-resizer/archive/refs/heads/main.zip))
-
-or
-
-Clone this repository by using a command line:
-
-```bash
-> git clone https://github.com/bgpvp/really-simple-image-resizer/
-```
+Clone this repo
 
 #### You can remove the icon.png in the pics and output folders since they are used as placeholders.
 

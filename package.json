@@ -9,7 +9,6 @@
     "package-win": "npx electron-packager . --overwrite --icon=src/icon.ico",
     "package-linux": "electron-packager . really-simple-image-resizer --overwrite --platform=linux --arch=x64 --icon=src/icon.png --prune=true --out=release-builds"
   },
-  "author": "bgpvp",
   "license": "ISC",
   "dependencies": {
     "electron": "^16.0.4",
